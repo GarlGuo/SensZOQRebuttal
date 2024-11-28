@@ -51,15 +51,15 @@ Note that the `Sensitive ZO (C4 mask, 4 bit)` is our `SensZOQ` method, and the `
   
   We also include the task gradient as a reference:
 
-  (5) task gradient before FT. We abbreviate it as $\nabla \mathcal{F} (w_\mathrm{s})$
+  (5) task gradient before FT (start). We abbreviate it as $\nabla \mathcal{F} (w_\mathrm{st})$.
 
-  (6) task gradient after 10% finetuning steps (during FT). We abbreviate it as $\nabla \mathcal{F} (w_\mathrm{m})$
+  (6) task gradient after 10% finetuning steps (mid). We abbreviate it as $\nabla \mathcal{F} (w_\mathrm{mid})$.
 
-  (7) task gradient at the end of FT (after FT). We abbreviate it as $\nabla \mathcal{F} (w_\mathrm{e})$.
+  (7) task gradient at the end of FT (end). We abbreviate it as $\nabla \mathcal{F} (w_\mathrm{end})$.
 
   We consider 7 tasks (3 commonsense reasoning tasks `Arc-C`, `HellaSwag`, `PIQA`, 1 math task `AQuA_Rat`, 3 SuperGLUE tasks `RTE`, `WiC`, `COPA`).
 
-  **For a quick overview, we include an [average overlap ratio across tasks](https://anonymous.4open.science/r/SensZOQRebuttal-9EE4/Figures/mistral-7b-average-top-overlap.png)** (first row). 
+  **For a quick overview, we include an [average overlap ratio across these 7 tasks](https://anonymous.4open.science/r/SensZOQRebuttal-9EE4/Figures/mistral-7b-7tasks-top-overlap-avg.png)** (first row). The second row gives an empirical evidence for the "fixed gradient feature" during FT - the top entries in $\nabla \mathcal{F} (w_\mathrm{st})$ (task grad before FT) resemble $\nabla \mathcal{F} (w_\mathrm{mid})$ (task grad during FT) and $\nabla \mathcal{F} (w_\mathrm{end})$ (task grad during FT)
 
   - **Empirical findings**
   - - The top gradient entries from all 4 pretraining text corpuses still overlap considerably with the task gradient, at least for top-0.1% entries. 
