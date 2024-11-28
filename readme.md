@@ -39,7 +39,7 @@ Note that the `Sensitive ZO (C4 mask, 4 bit)` is our `SensZOQ` method, and the `
 
 - #### Mistral 7B: C4 gradient masks versus other gradients from pretraining text corpuses
 
-  [Overlap ratio in top entries of gradient squares](https://anonymous.4open.science/r/SensZOQRebuttal-9EE4/Figures/mistral-7b-C4-transferability.png): we compute the overlap ratio of top entries in gradient squares for gradients from causal LM loss in (the number inside the parenthesis refers to the column/row rank for each subfigure)
+  [Overlap ratio in top entries of gradient squares](https://anonymous.4open.science/r/SensZOQRebuttal-9EE4/Figures/mistral-7b-7tasks-top-overlap.png): we compute the overlap ratio of top entries in gradient squares for gradients from causal LM loss in (the number inside the parenthesis refers to the column/row rank for each subfigure)
   
   (1) C4, our choice.
 
